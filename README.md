@@ -5,6 +5,12 @@ The Shared Flow  `cors-v1` uses conditions to determine where it is being execut
 * Captures information during the OPTIONS preflight.
 * Sets headers in the response.
 
+## Deployment
+Using Apigeetool
+* apigeetool deploySharedFlow -N -o your_org_name -e your_env_name -n cors-v1 -d .
+* apigeetool attachFlowHook -N -o your_org_name -e your_env_name --flowHookName PreProxyFlowHook --sharedFlowName cors-v1
+* apigeetool attachFlowHook -N -o your_org_name -e your_env_name --flowHookName PostProxyFlowHook --sharedFlowName cors-v1
+
 ## Use in Flow Hooks
 
 Attach Shared Flow to both Flow Hooks:
@@ -116,5 +122,5 @@ This example is not an official Google product, nor is it part of an official Go
 
 ## License
 
-This material is copyright 2019, Google LLC. and is licensed under the Apache 2.0 license.
+This material is copyright 2020, Google LLC. and is licensed under the Apache 2.0 license.
 See the [LICENSE](LICENSE) file.
