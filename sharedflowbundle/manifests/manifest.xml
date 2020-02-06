@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-cors-save-headers" version="SHA-512:c7c63a461dc9f7345e9afe4905fbf00cd32308ac517f3f4f99a7c76253476cafc63f0c2c58e03bce87608778ced4385f5e74cca6e50f5c4f067887e5eff90651"/>
+        <VersionInfo resourceName="AM-cors-set-headers" version="SHA-512:b8ee605641bafd8b6eb0d558fbc8fac2f48134cded203fe68e15a61d4836569e44ce88a9ef34dcf8b369c63d739f06b71d46a430e90b441e77b0295d7f6f5332"/>
+        <VersionInfo resourceName="AM-debug" version="SHA-512:5e145380f8c17c1edfd1ff4c26457908d0a6a5b573e960b5ff209759b879d4e57b19c29bc49a88c188a404464f4e02e5fb06f70a80c7ac7fcf7b66bb2914d41c"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:04bd84a02fb22b040b10bb968ca8c5443af95842f6a52b2b29b4fa9e82a27663d14ffafdbc2c39621662ca580f60820c9a2a11131a0d89e44faf5fe9b7c412fd"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>
