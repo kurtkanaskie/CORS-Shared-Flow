@@ -2,34 +2,30 @@
 <AssignMessage async="false" continueOnError="false" enabled="true" name="AM-debug">
     <DisplayName>AM-debug</DisplayName>
     <AssignVariable>
+        <Name>currentstep_flowstate</Name>
+        <Value>NO_VALUE</Value>
+        <Ref>currentstep.flowstate</Ref>
+    </AssignVariable>
+    <AssignVariable>
         <Name>is_error</Name>
-        <Value/>
+        <Value>NO_VALUE</Value>
         <Ref>is.error</Ref>
     </AssignVariable>
     <AssignVariable>
         <Name>current_flow_name</Name>
-        <Value/>
+        <Value>NO_VALUE</Value>
         <Ref>current.flow.name</Ref>
     </AssignVariable>
     <AssignVariable>
-        <Name>currentstep_flowstate</Name>
-        <Value/>
-        <Ref>currentstep.flowstate</Ref>
-    </AssignVariable>
-    <AssignVariable>
         <Name>parameter_current_flow_name</Name>
+        <Value>NO_VALUE</Value>
         <Ref>parameter_current_flow_name</Ref>
     </AssignVariable>
     <AssignVariable>
         <Name>parameter_currentstep_flowstate</Name>
+        <Value>NO_VALUE</Value>
         <Ref>parameter_currentstep_flowstate</Ref>
     </AssignVariable>
-    <!--
-    <Parameters>
-        <Parameter name="parameter_current_flow_name">{current.flow.name}</Parameter>
-        <Parameter name="parameter_currentstep_flowstate">{currentstep.flowstate}</Parameter>
-    </Parameters>
-    -->
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
     <AssignTo createNew="false" transport="http" type="request"/>
 </AssignMessage>

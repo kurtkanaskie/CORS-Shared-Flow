@@ -6,13 +6,17 @@
     <Step>
         <!-- Used in ProxyPreFlow or OPTION conditional flow named "CORS" -->
         <!-- NOTE: on error current.flow.name = PreFlow" so need to check is.error for false-->
-        <Condition>(currentstep.flowstate = "PROXY_REQ_FLOW") or (current.flow.name = "CORS") or ((current.flow.name = "PreFlow") and (is.error = false))</Condition>
+        <Condition>(currentstep.flowstate = "PROXY_REQ_FLOW") or 
+                   (current.flow.name = "CORS") or 
+                   ((current.flow.name = "PreFlow") and (is.error = false))</Condition>
         <Name>AM-cors-save-headers</Name>
     </Step>
     <Step>
         <!-- Used in ProxyPostFlow and DefaultFault rule -->
         <!-- NOTE: on error current.flow.name = PreFlow" so need to check is.error for true-->
-        <Condition>(currentstep.flowstate = "RESP_SENT") or (current.flow.name = "PostFlow") or (is.error = true)</Condition>
+        <Condition>(currentstep.flowstate = "RESP_SENT") or 
+                   (current.flow.name = "PostFlow") or 
+                   (is.error = true)</Condition>
         <Name>AM-cors-set-headers</Name>
     </Step>
 </SharedFlow>

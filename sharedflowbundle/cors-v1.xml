@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SharedFlowBundle revision="4" name="cors-v1">
+<SharedFlowBundle revision="8" name="cors-v1">
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1556304302596</CreatedAt>
     <CreatedBy>defaultUser</CreatedBy>
     <Description>Use in Flow Hooks: ProxyRequestFlowHook and ProxyResponseFlowHook, OR in proxy: ProxyPreFlow or OPTIONS conditional flow named "CORS" with ProxyPostFlow and DefaultFaultRule, automatically detects location and applies appropriate policy.</Description>
     <DisplayName>cors-v1</DisplayName>
-    <LastModifiedAt>1580997074002</LastModifiedAt>
-    <LastModifiedBy>kurtkanaskie@google.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:65ac58c456d943dd2189faadc274cf108bd0fea695deb819100a6843b9f9f776a9fb08b95765ef32b180a124bc9fbb9b18a6b758fa5a76653805fe35384b1e1c</ManifestVersion>
+    <LastModifiedAt>1589892941018</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:e536d35dcafdbce512525222c6ab1731b28cf01382041c3f7ab1d346e237fd33a59c25121cd49c53bfd08060c90e371c4d3438f116fdf05e0353a478f4cfdd78</ManifestVersion>
     <Policies>
         <Policy>AM-cors-save-headers</Policy>
         <Policy>AM-cors-set-headers</Policy>

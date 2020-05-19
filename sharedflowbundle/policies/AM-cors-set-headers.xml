@@ -5,12 +5,12 @@
         <Headers>
             <Header name="Access-Control-Allow-Origin">*</Header>
             <Header name="Access-Control-Allow-Headers">{access_control_request_headers}</Header>
-            <!-- Set to a larger value in seconds, this allows for testing  -->
+            <!-- This is in seconds -->
             <Header name="Access-Control-Max-Age">60</Header>
             <Header name="Access-Control-Allow-Methods">GET, PUT, POST, DELETE</Header>
             <Header name="X-SF-CORS">true</Header>
         </Headers>
     </Set>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-    <AssignTo createNew="false" transport="http" type="response"/>
+    <AssignTo type="response" transport="http" createNew="false"/>
 </AssignMessage>
